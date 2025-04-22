@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #D9D59A;
+}
+
+header {
+    background-image: linear-gradient(to top, #717502, #c6cf82);
+    margin: 0;
+    padding: 10px;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
+}
+
+#cabecalho {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#h1-cabecalho {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #000;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+nav > a:hover {
+    color: #343500;
+    background-color: #d9d59a65;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main{
+    background-color: white;
+    margin: 0 10% 2% 10%;
+    padding: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+    border-radius: 0px 0px 10px 10px;
+}
+
+section > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #717502;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'MinhaFonte', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'MinhaFonte', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, #c6cf82, #ffffff2d);
+    padding: 3px;
+    font-size: 1.5em;
+}
+
+.recuo-paragrafo {
+    text-indent: 30px; /* Você pode aumentar ou diminuir esse valor */
+    line-height: 1.6; /* Altura da linha (opcional, pra ficar mais bonito) */
+    text-align: justify; /* Deixa o texto justificado (opcional) */
+  }
+
+  .img-centralizada {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  h3 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background-color: #717502;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .container-texto {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #d9d59a;
+  }
+
+.container-texto > p {
+        margin: 0;
+        padding: 30px;
+    }
+
+.container-texto > p > a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #717502;
+    }
+
+     .container-listas {
+      display: flex;
+      justify-content: space-between; /* uma em cada lado */
+      max-width: 600px;
+      margin: 0 auto; /* centraliza o container na página */
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    footer {
+        background-color: #717502;
+        text-align: center;
+        color: white;
+        padding: 1px;
+        }
+    
+    footer > p {
+        margin: 0px;
+    }
