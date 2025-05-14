@@ -8,8 +8,14 @@
     <style>
 
         /* PSEUDO CLASSE
-           :nth-child(odd) = Seleciona os filhos ímpares
-           :nth-child(even) = Seleciona os filhos pares
+                :nth-child(odd) = Seleciona os filhos ímpares
+                :nth-child(even) = Seleciona os filhos pares
+
+           CABEÇALHO FIXO
+                TABLE: position: relative = Define a posição do cabeçalho
+                position: sticky = Fixa o cabeçalho
+                top: -1px = Fixa o cabeçalho no topo
+                background-color: gray = Cor de fundo do cabeçalho
          */
 
         body {
@@ -19,6 +25,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -36,6 +43,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         tbody > tr:nth-child(odd) {
