@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="-pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <!--
+            fieldset: Agrupa elementos relacionados em um formulário
+            legend: Define um título para o fieldset
+            label: Define um rótulo para um elemento de formulário
+            input: Define um campo de entrada de dados
+        -->
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu Nome" minlength="5" maxlength="50" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu E-mail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(00) 0 0000-0000" minlength="5" maxlength="16" required>
+            </p>
+            <!-- Estudar mais sobre RegEx -->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
